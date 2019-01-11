@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- font-family: 'Roboto', sans-serif; -->
+
+	<title>ventana modal</title>
+</head>
+<body>
+	<center>
+		<br>
+		<br>
+		<br>
+		<h1>Hola!</h1>
+		<br>
+		<br>
+		<br>
+		<h5>ven..... ingrese aqui.... pulsando ese boton de abajo!</h5>
+		<br>
+		<br>
+		<h6>Entra que no es pa' eso!</h6>
+		<br>
+		<br>
+		<br>
+		<!-- boton para abrir el modal -->
+		<!-- si viniste aqui para saber como es que el modal no cierra ni con la tecla ESC -->
+		<!-- prueba a quitar el atributo: data-backdrop="static" -->
+		<!-- prueba a quitar tambien:     data-keyboard="false" -->
+		<button id="btnInicio" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#formLogin" title="ves que este boton mete presion no?...ahora ENTRA MI AMIGO!" data-backdrop="static" data-keyboard="false">INICIAR SESIÓN</button>
+
+		<!-- el modal -->
+		<div class="modal fade" id="formLogin">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<!-- modal header -->
+					<div class="modal-header">
+						<h4 class="modal-title" style="color: black;">INICIAR SESIÓN</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- modal body -->
+					<div class="modal-body">
+						<form action="" class="form-control">
+							<label for="Usuario">Usuario: </label>
+							<br>
+							<input type="text" id="Usuario" class="form-control" placeholder="ingresa usuario:">
+							<br>
+							<br>
+							<label for="contrasena">Contraseña: </label>
+							<br>
+							<input type="password" id="contrasena" class="form-control" placeholder="ingresa contraseña">
+							<br>
+							<br>
+							<a type="button" class="btn btn-primary btn-block" href="galeria.html" style="text-decoration: none; display: block;">INGRESAR</a>
+							<br>
+							<br>
+						</form>
+					</div>
+
+					<!-- modal footer -->
+				<!-- 	<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+					</div> -->
+				</div>
+				
+			</div>
+			
+		</div>
+	</center>
+
+	<style>
+	body{
+		padding: 80px;
+		background: #02ACFB;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	#btnInicio{
+		box-shadow: 1px 2px 8px black;
+	}
+</style>
+<!-- ***** codigo javascript opcional ******-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>
